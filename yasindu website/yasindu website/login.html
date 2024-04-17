@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    * ,
+    ::before,
+    ::after{
+      margin:0;
+      padding:0;
+	  box-sizing: border-box;
+    }
+
+  .container{
+      width:100vw;
+      height:150vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background-image:url("./images/login.jpg");
+      background-repeat:no-repeat;
+      background-size:cover;
+    }
+	
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 80px;
+	background-color:#000;
+}
+
+.nav-bar .title{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+	span{
+    color: crimson;
+}
+
+	.nav-bar p{
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 80px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 27px;
+    font-weight: 600;
+    margin-left: 25px;
+    transition: .3s ease;
+}
+
+.menu li a:hover{
+    color: crimson;
+    padding: 8px 10px;
+    border: 0px solid #fff;
+}
+
+ form{
+      display:grid;
+      grid-template-columns:repeat(2, 200px);
+      gap:10px 0;
+      /*border:3px solid black;*/
+      padding:20px;
+      border-radius:30px;
+      background:linear-gradient(-45deg, transparent, white);
+    }
+
+    h1{
+      font-size:36px;
+      margin-bottom:10px;
+      grid-column:2 span;
+      justify-self:center;
+    }
+
+    input{
+      height:30px;
+      border-radius:5px;
+      outline:none;
+      border:2px solid black;
+      box-sizing:border-box;
+      padding-left:8px;
+      background:transparent;
+    }
+
+    input[type='submit']{
+      justify-self:center;
+      grid-column:2 span;
+      width:150px;
+      height:30px;
+      font-size:22px;
+      border-radius:10px;
+      margin-top:10px;
+      padding:0;
+      cursor:pointer;
+      /*background:linear-gradient(50deg, white, red);*/
+      background-color:red;
+      border:none;
+      transition:all 0.5s;
+    }
+
+    input[type='submit']:hover{
+      background-color:transparent;
+      color:black;
+    }
+
+    label{
+      font-size:19px;
+    }
+
+    p{
+      color:white;
+      font-size: 20px;
+    }
+	
+	 .footer{
+            font-size: 20px ;
+            bottom: 0;
+            width: 100vw;
+            height: 200px;
+            background-color: black;
+            display: grid;
+            place-items: center;
+            grid-template-columns: repeat(3, 1fr)
+        
+        }
+	
+	</style>
+  <title>SIGN | UP</title>
+</head>
+<body>
+ <div class="nav_container">
+		
+        <div class="nav-bar">
+            <h1 class="title">Jayawickrama<span>Cars</span></h1>
+            <p>Car Showroom</p>Car Showroom
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+				<li><a href="Cars.html" class="active">Cars</a></li>
+		 		<li><a href="Technology.html">Technology</a></li>
+			    <li><a href="about.html">About Us</a></li>
+				<li><a href="login.html">login</a></li>
+				<li><a href="reg.html">Register</a></li>
+               
+				
+            </ul>
+        </div>
+		
+		
+  <div class="container">
+	<form method="" action="" autocomplete="off">
+      <h1>Sign Up</h1>
+
+      <!-- <label for="full_name">Full Name</label>
+      <input type='text' name="full_name"/> -->
+
+      <label for="email">Email Address</label>
+      <input type='email' name='emai'/>
+
+      <label for="password">Password</label>
+      <input type='password' name='password'/>
+
+      <!-- <label type='confirm_password'>Confirm Password</label>
+      <input type='password' name='confirm_password'/>
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" name='dob' />
+
+      <label for="contactno">Contact Number</label>
+      <input type="tel" name="contactno"/>
+
+      <label for="permanent_address">Permanent Address</label>
+      <input type='tel' name="permanent_address"/> -->
+
+      
+      
+      <input type='submit' name='login' value='Login'/>
+      <p>Not have an account <a href="reg.html">Register </a>Here</p>
+    </form>
+	
+	
+	</div>
+  
+   <section class="footer">
+    <div class="address">
+        <p>Find Us:- 54/B,Dharmaraja Mawatha, Matara.
+        <br><br>
+        Tel No:- 0912234500
+        </p>
+    </div>
+    <div class="contact">
+        <p>Contact Us:- jayawickramacars@gmail.com
+        <br><br>
+        Follow Us on Facebook:- jayawickramacars@matara
+        </p>
+    </div>
+    <div class="web">
+        <p>Visit Us:- <a href="www.jayawickramacars.com">www.jayawickramacars.com</a></p>
+    </div> 
+  
+  
+  
+  
+  
+</body>
+</html>
